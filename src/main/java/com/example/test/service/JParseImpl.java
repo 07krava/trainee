@@ -14,12 +14,12 @@ public class JParseImpl implements JParse{
             JSONObject pageJsonObject = new JSONObject((JSONObject)json);
 
             JSONObject test2 = (JSONObject) pageJsonObject.get("wind");
-            weather.setWindspeed(test2.get("speed").toString());
+            weather.setWindSpeed(test2.get("speed").toString());
 
             JSONObject test3 = (JSONObject) pageJsonObject.get("main");
             weather.setTemperature(test3.get("temp").toString());
-            weather.setTemperaturemax(test3.get("temp_max").toString());
-            weather.setTemperaturemin(test3.get("temp_min").toString());
+            weather.setTemperatureMax(test3.get("temp_max").toString());
+            weather.setTemperatureMin(test3.get("temp_min").toString());
             weather.setPressure(test3.get("pressure").toString());
 
             return weather;

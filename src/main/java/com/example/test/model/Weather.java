@@ -18,13 +18,10 @@ public class Weather {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String windspeed;
-
+    private String windSpeed;
     private String temperature;
-
-    private String temperaturemin;
-
-    private String temperaturemax;
+    private String temperatureMin;
+    private String temperatureMax;
     private String pressure;
 
     public Long getId() {
@@ -35,12 +32,12 @@ public class Weather {
         this.id = id;
     }
 
-    public String getWindspeed() {
-        return windspeed;
+    public String getWindSpeed() {
+        return windSpeed;
     }
 
-    public void setWindspeed(String windspeed) {
-        this.windspeed = windspeed;
+    public void setWindSpeed(String windSpeed) {
+        this.windSpeed = windSpeed;
     }
 
     public String getTemperature() {
@@ -51,20 +48,20 @@ public class Weather {
         this.temperature = temperature;
     }
 
-    public String getTemperaturemin() {
-        return temperaturemin;
+    public String getTemperatureMin() {
+        return temperatureMin;
     }
 
-    public void setTemperaturemin(String temperaturemin) {
-        this.temperaturemin = temperaturemin;
+    public void setTemperatureMin(String temperatureMin) {
+        this.temperatureMin = temperatureMin;
     }
 
-    public String getTemperaturemax() {
-        return temperaturemax;
+    public String getTemperatureMax() {
+        return temperatureMax;
     }
 
-    public void setTemperaturemax(String temperaturemax) {
-        this.temperaturemax = temperaturemax;
+    public void setTemperatureMax(String temperatureMax) {
+        this.temperatureMax = temperatureMax;
     }
 
     public String getPressure() {
@@ -79,10 +76,10 @@ public class Weather {
     public String toString() {
         return "Weather{" +
                 "id=" + id +
-                ", windspeed='" + windspeed + '\'' +
+                ", windSpeed='" + windSpeed + '\'' +
                 ", temperature='" + temperature + '\'' +
-                ", temperaturemin='" + temperaturemin + '\'' +
-                ", temperaturema='" + temperaturemax + '\'' +
+                ", temperatureMin='" + temperatureMin + '\'' +
+                ", temperatureMax='" + temperatureMax + '\'' +
                 ", pressure='" + pressure + '\'' +
                 '}';
     }
