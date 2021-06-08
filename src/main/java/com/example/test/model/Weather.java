@@ -18,11 +18,29 @@ public class Weather {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String country;
+    private String nameCity;
     private String windSpeed;
     private String temperature;
     private String temperatureMin;
     private String temperatureMax;
     private String pressure;
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getNameCity() {
+        return nameCity;
+    }
+
+    public void setNameCity(String nameCity) {
+        this.nameCity = nameCity;
+    }
 
     public Long getId() {
         return id;
@@ -76,6 +94,8 @@ public class Weather {
     public String toString() {
         return "Weather{" +
                 "id=" + id +
+                ", country='" + country + '\'' +
+                ", nameCity='" + nameCity + '\'' +
                 ", windSpeed='" + windSpeed + '\'' +
                 ", temperature='" + temperature + '\'' +
                 ", temperatureMin='" + temperatureMin + '\'' +
