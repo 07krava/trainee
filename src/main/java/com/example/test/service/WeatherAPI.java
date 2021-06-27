@@ -10,8 +10,7 @@ public class WeatherAPI {
     public static String getCity(String name) {
         try {
             RestTemplate template = new RestTemplate();
-            String url = template.getForObject("https://api.openweathermap.org/data/2.5/weather?q=" + name
-                                                                   + "&units=metric&lang=fi&appid=" + apiKey, String.class);
+            String url = template.getForObject("https://api.openweathermap.org/data/2.5/weather?q="+ name +"&units=metric&lang=en&appid=" + apiKey, String.class);
             return url;
         } catch (HttpStatusCodeException e) {
             return e.getResponseBodyAsString();
